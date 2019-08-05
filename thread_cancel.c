@@ -17,7 +17,7 @@ void* task(void *args)
         if ( count % 1024 == 0) {
             printf("test cancel at %-6d\n", count);
             //pthread_testcancel();
-            //pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, &oldtype);
+            manpthread_setcancelstate(PTHREAD_CANCEL_ENABLE, &oldtype);
         }
 
     }
